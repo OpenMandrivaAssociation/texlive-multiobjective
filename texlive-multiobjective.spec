@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/multiobjective
+# catalog-date 2008-09-09 11:27:07 +0200
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-multiobjective
 Version:	1.0
 Release:	1
@@ -45,6 +51,7 @@ similar fields.
 #- source
 %doc %{_texmfdistdir}/source/latex/multiobjective/multiobjective.dtx
 %doc %{_texmfdistdir}/source/latex/multiobjective/multiobjective.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ similar fields.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
