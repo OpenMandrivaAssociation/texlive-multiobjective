@@ -1,6 +1,6 @@
 Name:		texlive-multiobjective
-Version:	15878
-Release:	2
+Version:	75878
+Release:	1
 Summary:	Symbols for multibojective optimisation etc
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/multiobjective
